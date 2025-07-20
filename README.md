@@ -25,7 +25,19 @@ Screenshot below confirms the Identity Center setup and permission configuration
 ## Status
 ✅ Completed
 
-from pathlib import Path
+🚀 CloudSec Network Bootcamp – AWS Identity Center Setup ✅
+
+
+As part of Week 2 of the CloudSec Network Bootcamp, I successfully configured AWS IAM Identity Center (formerly AWS SSO):
+
+🔹 Set up a new user account
+🔹 Assigned permission sets using SecurityAudit policies
+🔹 Tested and submitted all deliverables via screenshot validation
+
+This hands-on task deepened my understanding of:
+🔐 Identity and access management (IAM)
+🛡️ Security policies and permission sets
+⚙️ Administrative cloud configurations
 
 # 🚀 AWS Bootcamp Week 3 – EC2 Provisioning & Security
 
@@ -67,4 +79,17 @@ Launch and configure a **Windows Server EC2 instance** using the **Amazon Window
 - 📸 **Screenshot 3**: Successful Remote Desktop (RDP) login
 
 ## 📁 Project Structure (GitHub)
+
+✅ AWS Bootcamp – Week 4: VPC & Subnet Configuration Achieved!
+
+I successfully completed Week 4 of the CloudSec Network AWS Bootcamp, where I worked on simulating a multi-VPC architecture 🎯
+
+🚀 Key Milestones:
+🔹 Created two separate VPCs (VPC-A: 10.10.0.0/16 & VPC-B: 10.20.0.0/16)
+🔹 Configured public & private subnets in both VPCs
+🔹 Established VPC Peering between the two environments
+🔹 Updated route tables to enable traffic flow
+🔹 Captured console screenshots for validation and documentation
+
+This hands-on experience strengthened my grasp of AWS Networking, Subnetting, and Cloud Infrastructure security. I'm one step closer to mastering AWS architecture! 🌐🔥
 
