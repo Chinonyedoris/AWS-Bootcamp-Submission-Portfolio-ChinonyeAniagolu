@@ -80,16 +80,16 @@ Launch and configure a **Windows Server EC2 instance** using the **Amazon Window
 
 ## 📁 Project Structure (GitHub)
 
-✅ AWS Bootcamp – Week 4: VPC & Subnet Configuration Achieved!
+## ✅ AWS Bootcamp – Week 4: VPC & Subnet Configuration Achieved!
 
 I successfully completed Week 4 of the CloudSec Network AWS Bootcamp, where I worked on simulating a multi-VPC architecture 🎯
 
-🚀 Key Milestones:
+### 🚀 Key Milestones:
 🔹 Created two separate VPCs (VPC-A: 10.10.0.0/16 & VPC-B: 10.20.0.0/16)
 🔹 Configured public & private subnets in both VPCs
 🔹 Established VPC Peering between the two environments
 🔹 Updated route tables to enable traffic flow
 🔹 Captured console screenshots for validation and documentation
-
+ 
 This hands-on experience strengthened my grasp of AWS Networking, Subnetting, and Cloud Infrastructure security. I'm one step closer to mastering AWS architecture! 🌐🔥
 
