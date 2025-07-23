@@ -93,3 +93,100 @@ I successfully completed Week 4 of the CloudSec Network AWS Bootcamp, where I wo
  
 This hands-on experience strengthened my grasp of AWS Networking, Subnetting, and Cloud Infrastructure security. I'm one step closer to mastering AWS architecture! 🌐🔥
 
+# 🚀 AWS Bootcamp Week 5 – Docker Container Deployment with ECS Fargate
+
+This project is part of the CloudSec Network AWS Cloud Computing Bootcamp. In Week 5, the goal was to deploy a **Grafana Docker container** to **Amazon ECS using Fargate**.
+
+---
+
+## 📌 Project Overview
+
+- **Task:** Deploy Grafana via Docker using Amazon ECS (Fargate).
+- **Objective:** Use container orchestration to run a monitoring dashboard tool (Grafana) without managing servers.
+- **Container Image:** `grafana/grafana`
+- **Port:** 3000 (default Grafana UI port)
+
+---
+
+## ⚙️ Tools & Technologies
+
+- **AWS ECS (Fargate)**
+- **Docker**
+- **IAM**
+- **VPC/Subnet**
+- **Security Groups**
+- **Elastic Network Interface (ENI)**
+
+---
+
+## 📝 Deployment Steps
+
+### 1. ECS Task Definition
+- Created a new **Fargate Task Definition** named `grafana-task-definition`
+- Defined container image: `grafana/grafana`
+- Set **port mapping**: `3000:3000`
+
+### 2. ECS Cluster
+- Created ECS cluster named `grafana-cluster` (Fargate launch type)
+- Deployed task into a **public subnet**
+
+### 3. Networking & Security
+- Configured a **Security Group** allowing **inbound TCP traffic on port 3000**
+- Restricted access to **my public IP**
+- Assigned task a public IP via ENI
+
+### 4. Task Execution
+- Launched task and confirmed **RUNNING** status
+- Accessed the Grafana UI via:
+
+> Default credentials: `admin` / `admin`
+
+---
+
+## 📷 Screenshots
+
+> _Located in the `/screenshots` folder_
+
+- ✅ ECS Cluster
+- ✅ Task Definition Details
+- ✅ Security Group Rules
+- ✅ Grafana Login Page (Browser)
+
+---
+
+## ✅ Results
+
+Successfully deployed Grafana in a containerized environment using AWS ECS Fargate. This project demonstrates my understanding of:
+
+- Cloud-native deployments
+- Docker containerization
+- ECS Task Definition and Cluster setup
+- Networking and secure access
+
+---
+
+## 📎 Resources
+
+- [Grafana Docker Image](https://hub.docker.com/r/grafana/grafana)
+- [AWS ECS Documentation](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/Welcome.html)
+
+---
+
+
+
+
+
+
+
+
+
+## 🙌 Author
+
+**Chinonye Doris Aniagolu**  
+📧 [chinonyedoris@gmail.com](mailto:chinonyedoris@gmail.com)  
+🌐 [GitHub Portfolio](https://chinonyedoris.github.io/AWS-Bootcamp-Submission-Portfolio-ChinonyeAniagolu/)  
+🔗 [LinkedIn](https://linkedin.com/in/chinonyedoris-aniagolu-250603225)
+
+---
+
+
