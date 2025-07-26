@@ -171,6 +171,44 @@ Successfully deployed Grafana in a containerized environment using AWS ECS Farga
 - [AWS ECS Documentation](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/Welcome.html)
 
 ---
+# 🚀 Week 6: Deploying Metabase with RDS on AWS ECS
+
+This project contains the setup for deploying the Metabase dashboard on Amazon ECS (Fargate) and connecting it to an Amazon RDS PostgreSQL database.
+
+## 📌 Tools Used
+- AWS ECS (Fargate)
+- AWS RDS (PostgreSQL)
+- Docker (Metabase image)
+- Security Groups, IAM, and VPC
+
+## 🔧 Architecture
+- ECS (Fargate) service runs the official `metabase/metabase` Docker image.
+- RDS (PostgreSQL) stores Metabase metadata.
+- Both are deployed in the same VPC with configured security groups.
+
+## 🛡️ Security Group Rules
+- **RDS Inbound:** TCP 5432 from ECS security group
+- **ECS Outbound:** TCP 5432 to RDS
+
+## 🌐 Access URL
+Once deployed, Metabase is available
+## 📸 Screenshots
+- ✅ ECS Task Running
+- ✅ RDS PostgreSQL Instance
+- ✅ Security Group Rules (Port 5432)
+- ✅ Metabase Login Page
+
+## 💻 Environment Variables in ECS
+```env
+MB_DB_TYPE=postgres
+MB_DB_DBNAME=metabase
+MB_DB_PORT=5432
+MB_DB_USER=admin
+MB_DB_PASS=yourpassword
+MB_DB_HOST=<rds-endpoint>
+
+
+
 
 
 
