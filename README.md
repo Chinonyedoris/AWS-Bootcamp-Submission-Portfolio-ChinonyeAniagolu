@@ -207,6 +207,153 @@ MB_DB_USER=admin
 MB_DB_PASS=yourpassword
 MB_DB_HOST=<rds-endpoint>
 
+# Cloud Bootcamp Tasks – Week 7 to Week 9
+
+Welcome to the official documentation of my AWS Bootcamp projects for **CloudSec Network (CSN)** covering deployment, monitoring, and securing static websites on AWS.
+
+---
+
+## ✅ Week 7: Monitoring & Observability with CloudWatch
+
+### 🎯 Task Overview
+Deploy a containerized application on ECS using Fargate and monitor its performance using Amazon CloudWatch.
+
+### 🛠️ Steps
+1. **Deploy to ECS:**
+   - Go to **ECS** → Create Cluster (Fargate)
+   - Create Task Definition (e.g., Nginx/Grafana)
+   - Assign CPU & Memory
+   - Run service in a public subnet
+
+2. **Create CloudWatch Dashboard:**
+   - Navigate to **CloudWatch → Dashboards**
+   - Add widgets:
+     - ECS → CPUUtilization
+     - ECS → MemoryUtilization
+
+3. **Test & Simulate Load:**
+   - Use tools like `curl` or [Loader.io](https://loader.io) to simulate traffic
+
+### 📸 Deliverables
+- ECS task/service running
+- Task definition (CPU/Memory config)
+- CloudWatch metrics dashboard
+- (Optional) Simulated load screenshot
+
+---
+
+## ✅ Week 8: Deploy Static Website with S3 & CloudFront
+
+### 🎯 Task Overview
+Deploy a resume or portfolio static website using Amazon S3 and serve it securely using CloudFront.
+
+### 🛠️ Steps
+1. **Create S3 Bucket:**
+   - Enable static website hosting
+   - Upload `index.html`, `about.html`, etc.
+   - Remove "Block All Public Access"
+
+2. **Set Bucket Policy:**
+```json
+{
+  "Version": "2012-10-17",
+  "Statement": [{
+    "Sid": "PublicReadGetObject",
+    "Effect": "Allow",
+    "Principal": "*",
+    "Action": "s3:GetObject",
+    "Resource": "arn:aws:s3:::your-bucket-name/*"
+  }]
+}
+
+3. **Create CloudFront Distribution:**
+
+Set S3 static site as the origin
+
+Enable public access
+
+Wait for distribution deployment
+
+
+📸 Deliverables
+
+Screenshot: S3 static site settings
+
+Screenshot: Bucket policy config
+
+Screenshot: CloudFront distribution setup
+
+Screenshot: Live website via CloudFront
+
+
+### ✅ Week 9: Securing Custom Domains with HTTPS
+
+🎯 Task Overview
+
+Register a free domain, set it up using Route 53, secure it with ACM (SSL), and link it to CloudFront with HTTPS support.
+
+🛠️ Steps
+
+1. Register Domain:
+
+Go to freenom.com
+
+Register a domain (e.g., myproject.tk)
+
+
+2. Route 53 Setup:
+
+Create a Hosted Zone
+
+Copy NS records to Freenom’s nameservers
+
+
+3. ACM Certificate:
+
+Request a Public SSL certificate
+
+Validate using DNS validation (CNAME)
+
+Attach to CloudFront
+
+
+4. Update CloudFront:
+
+Add custom domain and SSL certificate
+
+Confirm site loads over HTTPS
+
+
+## 📸 Deliverables
+
+Route 53 Hosted Zone setup
+
+ACM certificate validation
+
+CloudFront with domain & HTTPS
+
+Final secure site screenshot
+
+
+### 🌐 Tools Used
+
+AWS ECS (Fargate)
+
+CloudWatch
+
+Amazon S3
+
+CloudFront
+
+Route 53
+
+ACM (Certificate Manager)
+
+Freenom
+
+
+
+
 
 
 
