@@ -1,8 +1,13 @@
 # AWS-Bootcamp-Submission-Portfolio-ChinonyeAniagolu
 Chinonyedoris.github.io.AWSCloud-Bootcamp-Submission/Portfolio
 # This repository contains weekly deliverables from the AWS Cloud Bootcamp organized by CloudSec Network. Tasks include account setup, Identity Center configuration, and security role assignments.”
-# Week 1 - AWS Account Setup
 
+
+# Cloud Bootcamp Tasks – Week 1 to Week 9
+
+Welcome to the official documentation of my AWS Bootcamp projects for **CloudSec Network (CSN)** covering deployment, monitoring, and securing static websites on AWS.
+
+# Week 1 - AWS Account Setup
 ## Task
 Set up an AWS account using a personal email address.
 
@@ -200,18 +205,12 @@ Once deployed, Metabase is available
 
 ## 💻 Environment Variables in ECS
 ```env
-MB_DB_TYPE=postgres
+   MB_DB_TYPE=postgres
 MB_DB_DBNAME=metabase
 MB_DB_PORT=5432
 MB_DB_USER=admin
 MB_DB_PASS=yourpassword
 MB_DB_HOST=<rds-endpoint>
-
-# Cloud Bootcamp Tasks – Week 7 to Week 9
-
-Welcome to the official documentation of my AWS Bootcamp projects for **CloudSec Network (CSN)** covering deployment, monitoring, and securing static websites on AWS.
-
----
 
 ## ✅ Week 7: Monitoring & Observability with CloudWatch
 
