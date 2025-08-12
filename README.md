@@ -350,6 +350,28 @@ ACM (Certificate Manager)
 
 Freenom
 
+## Weekly Task 10 is about creating an Event-Driven Workflow with AWS Lambda.
+
+## Here’s how you can complete it step-by-step:
+
+## Step 1 – Create an S3 Bucket Log in to your AWS Management Console. Search for S3 and click Create bucket. Name the bucket (e.g., lambda-trigger-bucket), choose a region, and leave other settings as default. Click Create bucket. 
+
+## Step 2 – Write Your Lambda Function In the AWS Console, go to Lambda → Create function. Choose Author from scratch. Name it (e.g., S3FileUploadHandler). Select Python or Node.js as the runtime. Create the function. 
+
+## Step 3 – Create an S3 Event Trigger Go to your S3 bucket → Properties → Event notifications. Click Create event notification. Name it (e.g., OnFileUpload). Event type: PUT (Object Created). Destination: Select Lambda function → your function. Save changes. 
+
+## Step 4 – Add Permissions In Lambda, under Configuration → Permissions, ensure your function has: AWSLambdaBasicExecutionRole Permission to read from S3 (s3:GetObject) If sending email via SES, ses:SendEmail 
+
+## Step 5 – Optional Email Notification with SES 
+
+If required by your task:
+
+Go to Amazon SES → Verify your email. Add SES send code in your Lambda function to email a confirmation after file upload.
+
+## Step 6 – Test the Workflow Upload a file to the S3 bucket. Check CloudWatch Logs for Lambda execution results. Take screenshots of: S3 bucket with event trigger. Lambda code/configuration. 
+
+
+
 
 
 
